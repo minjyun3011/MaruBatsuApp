@@ -23,7 +23,6 @@ class addTableViewController: UIViewController {
         dismiss(animated: true, completion: nil)
     }
     
-    
     @IBAction func saveQuizButton(_ sender: UIButton) {
         guard let questionText = quizTextField.text,!questionText.isEmpty else {
             showAlert(message: "問題文を入力してください")
@@ -49,6 +48,11 @@ class addTableViewController: UIViewController {
     }
     
 }
-
+extension addTableViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+}
 
 

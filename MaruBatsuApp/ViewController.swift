@@ -19,7 +19,6 @@ class ViewController: UIViewController {
     var currentQuestionNum: Int = 0
     var questions: [Question] = []
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         showQuestion()
