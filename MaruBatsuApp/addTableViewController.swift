@@ -29,7 +29,7 @@ class addTableViewController: UIViewController {
             return
         }
         
-        let isCorrectAnswer = answerSegmentedControl.selectedSegmentIndex == 0
+        let isCorrectAnswer = answerSegmentedControl.selectedSegmentIndex == 1
         
         onQuestionCreated?(questionText, isCorrectAnswer)
         dismiss(animated: true, completion: nil)
