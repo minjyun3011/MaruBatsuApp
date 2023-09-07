@@ -65,6 +65,7 @@ class ViewController: UIViewController {
     @IBAction func createQuizButton(_ sender: UIButton) {
         let storyboard = UIStoryboard(name: "Main", bundle:nil)
         if let createQuestionVC = storyboard.instantiateViewController(withIdentifier: "addTableViewController") as? addTableViewController {
+            print("test")
             createQuestionVC.onQuestionCreated = { [weak self] questionLabel,
                 isCorrectAnswer in
                 let newQuestion = Question(questionText: questionLabel, isCorrectAnswer: isCorrectAnswer)
@@ -78,6 +79,7 @@ class ViewController: UIViewController {
                 self?.dismiss(animated: true, completion: nil)
             }
             self.present(createQuestionVC, animated: true, completion: nil)
+            
         }
     }
     

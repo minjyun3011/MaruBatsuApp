@@ -62,6 +62,7 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="問題を作成する"/>
                                 <connections>
+                                    <action selector="createQuizButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ntD-Xj-6u5"/>
                                     <segue destination="1XY-5c-9v3" kind="show" identifier="addTableViewController" id="1tX-1q-l1i"/>
                                 </connections>
                             </button>
@@ -89,7 +90,7 @@
         <!--Add Table View Controller-->
         <scene sceneID="2Pc-fw-RWA">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="1XY-5c-9v3" customClass="addTableViewController" customModule="MaruBatsuApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="addTableViewController" modalPresentationStyle="fullScreen" id="1XY-5c-9v3" customClass="addTableViewController" customModule="MaruBatsuApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="K2g-aD-Hlq">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
